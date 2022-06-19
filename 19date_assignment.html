@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li>Delhi</li>
+        <li>Mumbai</li>
+        <li>Jaipur</li>
+        <li>Kolkata</li>
+        <li>Indore</li>
+    </ol>
+    
+
+</body>
+<script>
+    //An array is given, return the sum of all the positives numbers.
+
+    const input = [ 1, -5, 2, 10, -30, 29, 50];
+
+const getpositiveinput = (arr)=>{
+  var value =  arr.filter(item=>item>0).reduce((a,b)=>a+b);
+  return value;
+}
+        
+
+console.log(getpositiveinput(input));
+
+//Multiple records of people are given, you have to print the first name and last name .
+
+let friends = [  {fname: 'Rachal', lname:"Green" ,id: 1, marks : 98 },
+  {fname: 'Ross',lname:"Geller" , id: 2, marks : 23 },
+  {fname: 'Monica ',lname:"Geller" , id: 3, marks : 75 },  
+  {fname: 'Joey',lname:" Tribbiani" , id: 4, marks : 46 },  
+  {fname: 'Chandler  ',lname:"Bing" , id: 5, marks : 78 },          
+  {fname: 'Phoebe',lname:"Buffay" , id: 6, marks : 45 }   ]
+  
+  
+  console.log(friends[1].fname);
+  console.log(friends[1].lname);
+</script>
+</html>
